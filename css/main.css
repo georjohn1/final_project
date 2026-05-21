@@ -56,16 +56,21 @@ a:hover {
   border-bottom: 2px solid #2b2520;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2%;
+    padding: 20px;
+}
+
 .columns {
-    font-size: 14px;
-    line-height: 20px;
-    width: 17.5%;
     display: inline-block;
-    padding: 0 1% 0 1%;
+    width: 30%;
     vertical-align: top;
+    padding: 0 1% 0 1%;
     margin-bottom: 50px;
-    transition: all .7s;
-    text-align: center;
+    text-align: left;
 }
 
 .headline1{
@@ -76,3 +81,4 @@ a:hover {
     padding: 10px 30px 10px 0;
     margin-top: 30px;
 }
+
