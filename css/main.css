@@ -1,0 +1,55 @@
+body {
+  background-color: #f5f5f0;
+  color: #2b2520;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #2b2520;
+  padding-bottom: 15px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-style: italic;
+  color: #2b2520;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+p {
+  max-width: 900px;
+  text-align: justify;
+}
+
+a {
+  color: #8b7355;
+  text-decoration: none;
+  border-bottom: 1px solid #8b7355;
+}
+
+a:hover {
+  color: #2b2520;
+  border-bottom: 2px solid #2b2520;
+}
+
+.columns {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid #d4ccc0;
+}
+
+.columns > * {
+  break-inside: avoid;
+}
+
+.no-columns {
+  column-count: 1;
+}
