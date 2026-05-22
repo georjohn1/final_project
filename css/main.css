@@ -52,6 +52,16 @@ p {
   text-align: justify;
 }
 
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  max-width: none;
+  margin: 0;
+  text-align: center;
+}
+
 a {
   color: #8b7355;
   text-decoration: none;
@@ -84,6 +94,15 @@ a:hover {
     box-sizing: border-box;
     padding: 10px 30px 10px 0;
     margin-top: 30px;
+}
+
+.footer{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+    text-align: center;
 }
 
 img{
