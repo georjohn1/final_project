@@ -64,7 +64,7 @@ a:hover {
     padding: 20px;
 }
 
-.columns {
+.column {
     display: inline-block;
     width: 30%;
     vertical-align: top;
@@ -82,3 +82,8 @@ a:hover {
     margin-top: 30px;
 }
 
+@media screen and (min-width: 393px){
+    .grid{
+        grid-template-columns:45% 45%
+    }
+}
