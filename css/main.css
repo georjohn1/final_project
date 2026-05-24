@@ -70,7 +70,7 @@ a {
 
 a:hover {
   color: #2b2520;
-  border-bottom: 2px solid #2b2520;
+  border-bottom: 1px solid #2b2520;
 }
 
 .content {
@@ -106,9 +106,21 @@ a:hover {
 }
 
 img{
-    border: 5px solid black;
+    border: 2px solid black;
     width: 50%;
     padding: 5px;
+}
+
+.pub-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.pub-gallery img {
+  width: 100%;
+  display: block;
 }
 
 @media screen and (min-width: 600px){
@@ -121,4 +133,12 @@ img{
   .content {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 10px 24px 2px rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
 }

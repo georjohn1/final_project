@@ -21,15 +21,15 @@
             
                 <div class="content"> 
                     <!--
-                    make flex wrap wrap
-                    add media query that turns wrap off when the screen is big enough
-                    to make it look like a newspaper
+                    make flex wrap wrap 
+                    add media query that turns wrap off when the screen is big enough (done)
                     might need to switch to percent base, depends on media query
                     think to do one carousel 
                     (idea) randomly populate different images like how we did in other class
                     Use JS to populate date and weather
                     See if you can find a way to embbed a map (google map API) -->
                     <!-- finish masking and submit-->
+                     <!-- Irish Culture Section -->
                     <div class="column">
                             <!-- How can i create space above and below the healline? 
                             I want to make it more visually appealing and easier to read. right now i'm creating blank
@@ -50,9 +50,39 @@
                                 The sense of community and camaraderie that permeates Irish pubs is truly remarkable, creating a space where people from all walks of life can come together
                                 and connect over a shared love of good company and great conversation. 
                             </p>
-                                <img src="pub_images/new_temple_at_night.jpeg" alt="Temple Pub at Night">
+                            <!-- lightbox-plus-jquery.js -->
+                                <div class="pub-gallery">
+                                    <a data-lightbox="pub" href="pub_images/new_temple_at_night.jpeg">
+                                        <img src="pub_images/new_temple_at_night.jpeg" alt="Temple Pub at Night" 
+                                        class="hover-shadow">
+                                    </a>
+                                    <a data-lightbox="pub" href="pub_images/inside_temple.jpeg">
+                                        <img src="pub_images/inside_temple.jpeg" alt="The magical inside of Temple Bar"
+                                        class="hover-shadow">
+                                    </a>
+                                    <a data-lightbox="pub" href="pub_images/new_hairy_lemon.jpeg">
+                                        <img src="pub_images/new_hairy_lemon.jpeg" alt="Hairy Lemon Pub"
+                                        class="hover-shadow">
+                                    </a>
+                                    <a data-lightbox="pub" href="pub_images/diceys.jpeg">
+                                        <img src="pub_images/diceys.jpeg" alt="The outside of Dicey's Bar and Lounge"
+                                        class="hover-shadow">
+                                    </a>
+                                </div>
+                            <p>
+                                No visit to an Irish pub is complete without encountering a traditional music session. 
+                                These informal gatherings of musicians — fiddles, tin whistles, bodhrán drums, and sometimes a lone singer — 
+                                appear unannounced and fill the room with centuries-old tunes. 
+                                Unlike a ticketed performance, a session is organic and communal; 
+                                anyone with an instrument and the repertoire is welcome to pull up a chair and join in. 
+                                The music isn't background noise — it's the heartbeat of the evening, 
+                                drawing strangers into conversation and keeping locals rooted to their stools long after they intended to leave. 
+                                It is this effortless blend of spontaneity and tradition that makes the Irish pub unlike anything else in the world.
+                            </p>
+                                
 
                     </div>
+                    <!-- Food Section -->
                     <div class="column">
                         <p></p>
                         <span class="headline1">
@@ -74,6 +104,7 @@
                             The Irish have embraced this diversity and have made it their own, creating a unique culinary landscape that is both traditional and innovative, reflecting the dynamic and evolving nature of Irish culture.
                         </p>
                     </div>
+                    <!-- Transportation Section -->
                     <div class="column">
                         <!-- finish this section, just wanted to get it up to know so that i know what i need to finish -->
                         <p></p>
@@ -94,9 +125,12 @@
                         </p>
                     </div>
                 </div>
+                <!-- footer -->
                 <div class="footer">
                     <p style="text-align: center;">Copyright 2026 The Dublin Times</p>
                 </div>
         </main>
+        <!-- <script src="lightbox/lightbox-plus-jquery.js"></script> 
+         something wrong with this file, images don't open correctly-->
     </body>
 </html>
