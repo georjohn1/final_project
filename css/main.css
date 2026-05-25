@@ -1,6 +1,6 @@
 body {
     font-family: 'Droid Serif', serif;
-    font-size: 14px;
+    font-size: 18px;
     color: #2f2f2f;
     background-color: #f9f7f1;
 }
@@ -50,6 +50,7 @@ h2, h3, h4, h5, h6 {
 p {
   max-width: 900px;
   text-align: justify;
+  font-size: 18px;
 }
 
 .footer {
@@ -79,6 +80,60 @@ a:hover {
     gap: 2rem;
     padding: 20px;
 }
+/* beginning of animation */
+.page-shell {
+  perspective: 1800px;
+}
+
+.page-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.page-controls button {
+  border: 1px solid #2b2520;
+  background: #f9f7f1;
+  color: #2b2520;
+  padding: 0.55rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.page-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.page-controls span {
+  min-width: 7rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.page {
+  display: none;
+  transform-origin: center left;
+}
+
+.page.active {
+  display: grid;
+  animation: pageFlipIn 0.55s ease;
+}
+
+@keyframes pageFlipIn {
+  from {
+    opacity: 0;
+    transform: rotateY(-12deg) translateX(18px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0deg) translateX(0);
+  }
+}
+/* end of animation */
 
 .column {
   display: block;
@@ -136,6 +191,10 @@ img{
 @media screen and (min-width: 600px){
   .content{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-controls {
+    gap: 1.5rem;
   }
 }
 
