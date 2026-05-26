@@ -165,6 +165,27 @@ a:hover {
     transform: rotateY(0deg) translateX(0);
   }
 }
+
+/* Respect reduced-motion preferences and allow manual opt-in via class. */
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .page.active {
+    animation: none !important;
+  }
+}
 /* end of animation */
 
 .column {
