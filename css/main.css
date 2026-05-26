@@ -248,3 +248,49 @@ img.hover-shadow {
   width: 100%;
   display: block;
 }
+.sp_gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.sp_gallery img {
+  width: 100%;
+  display: block;
+}
+
+.galway_gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.galway_gallery img {
+  width: 100%;
+  display: block;
+}
+.guinness_gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.guinness_gallery img {
+  width: 100%;
+  display: block;
+}
+
+.retail_gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.retail_gallery img {
+  width: 100%;
+  display: block;
+}
