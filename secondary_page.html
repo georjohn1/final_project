@@ -4,28 +4,57 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Dublin Times</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="lightbox/css/lightbox.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
-        <header>
-            <h1 class="headline1">The Dublin Times</h1>
-            <nav>
-                <ul>
-                    <li><a href="home_page.html">Home</a></li>
-                    <li><a href="secondary_page.html">Secondary Page</a></li>
-                    <li><a href="contact_page.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <link href="dist/css/lightbox.css" rel="stylesheet">
+        <header class="head">
+                    <div class="header">
+                        <h1 class="headline0" style="text-align: center;">The Dublin Times</h1>
+                        <div class="subheader">
+                            <p style="text-align: center;">As a student at the University of Michigan, 
+                                I have had the opportunity to explore various cultures and traditions. 
+                            However, my experience in Dublin has been truly unique and eye-opening. From the moment I arrived, 
+                            I was captivated by the rich history and vibrant culture that permeates every corner of this city. 
+                            This page is specifically dedicated to my side quests in the country.</p>
+                        </div>
+                    </div>
+                </header>
         <main>
-            <div class="content page active" data-page-title="Home">
-                <div class="column">
-                    <p></p>
-                    <span class="headline1" >
-                        Welcome to The Dublin Times
-                    </span>
-                    <p></p>
+            <div class="grid">
+                <div class="content"> 
+                     <!-- St. Patrick's Cathedral Section -->
+                    <div class="column">
+                        <span class="headline2">Adventures on the Island</span>
+                        <p></p>
+                        <p>One of the most exciting aspects of the trip was going to see what makes Ireland so precious. This took me directly to St. Patruck's Cathedral, 
+                            which is one of the most iconic landmarks in Dublin. 
+                            The cathedral is a stunning example of Gothic architecture and is steeped in history. 
+                            I was amazed by the intricate details of the building and the beautiful stained glass windows. 
+                            It was a humbling experience to be in such a historic place and to learn about the rich cultural heritage of Ireland.
+                        </p>
+                        <p></p>
+                        <p>
+                            I've learned to value identity and culture, especially considereing where I've come from and the things that I've seen. I think's it's beautiful to think that on
+                            a single day of the year, people all around the world come together to celebrate their Irish heritage and culture. 
+                            It's a testament to the enduring power of culture and tradition, and it's something that I will always cherish about my time in Dublin.
+                            I understand why "On March 17th, everyone is Irish."
+                        </p>
+                    </div>
+                    
                 </div>
-            </div>
+                <!-- footer -->
+                <div class="footer">
+                    <p style="text-align: center;">Copyright 2026 The Dublin Times</p>
+                </div>
+                <div class="page-controls" aria-label="Page navigation">
+                        <button type="button" id="prevPage">Previous</button>
+                        <span id="pageIndicator" aria-live="polite">Page 1 of 2</span>
+                    </div>
+
+                    <div class="page-shell">
         </main>
+        <script src="lightbox/lightbox-plus-jquery.js"></script> 
+    </body>
+</html>

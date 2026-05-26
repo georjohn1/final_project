@@ -5,12 +5,7 @@ body {
     background-color: #f9f7f1;
 }
 header{
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 80px;
-    text-transform: uppercase;
     display: block;
-    line-height: 72px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -31,19 +26,25 @@ header{
 }
 
 .headline0{
-    font-weight: 400;
-    font-family: 'Times New Roman', serif;
-    font-size: 36px;
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(2.75rem, 9vw, 6rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     box-sizing: border-box;
-    padding: 10px 30px 10px 0;
-    margin-top: 30px;
+    margin: 0 0 20px;
+    border-bottom: 3px solid #2b2520;
+    padding: 10px 0 15px;
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: inherit;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  line-height: 1.1;
+  letter-spacing: inherit;
   margin-bottom: 30px;
   border-bottom: 3px solid #2b2520;
   padding-bottom: 15px;
@@ -60,6 +61,7 @@ p {
   max-width: 900px;
   text-align: justify;
   font-size: 18px;
+  margin: 0 auto 20px;
 }
 
 .footer {
@@ -156,8 +158,9 @@ a:hover {
     font-family: 'Times New Roman', serif;
     font-size: 36px;
     box-sizing: border-box;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 0;
     margin-top: 30px;
+    text-align: left;
 }
 
 .headline2{
@@ -166,8 +169,9 @@ a:hover {
     font-style:italic;
     font-size: 36px;
     box-sizing: border-box;
-    padding: 10px 30px 10px 0;
+    padding: 10px 0;
     margin-top: 30px;
+    text-align: left;
 }
 
 .footer{
