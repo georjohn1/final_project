@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
         <link href="dist/css/lightbox.css" rel="stylesheet">
         <header class="head">
                     <div class="header">
@@ -22,7 +23,7 @@
                         </div>
                     </div>
                 </header>
-        <main>
+        <main id="main-content" tabindex="-1">
             <div class="grid">
                 <div class="content"> 
                      <!-- St. Patrick's Cathedral Section -->
@@ -175,8 +176,10 @@
                     <p style="text-align: center;">Copyright 2026 The Dublin Times</p>
                 </div>
                 <div class="page-controls" aria-label="Page navigation">
-                        <button type="button" id="prevPage">Previous</button>
-                        <span id="pageIndicator" aria-live="polite">Page 1 of 2</span>
+                        <a href="home_page.html">
+                            <button type="button" id="prevPage">Previous</button>
+                        </a>
+                        <span id="pageIndicator" aria-live="polite">Page 2 of 2</span>
                 </div>
 
                     <div class="page-shell">

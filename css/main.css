@@ -4,6 +4,27 @@ body {
     color: #2f2f2f;
     background-color: #f9f7f1;
 }
+
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transform: translateY(-200%);
+  background: #2b2520;
+  color: #f9f7f1;
+  padding: 0.75rem 1rem;
+  border: 0;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.skip-link:hover {
+  color: #f9f7f1;
+  border-bottom: 0;
+}
 header{
     display: block;
     margin-bottom: 20px;
