@@ -166,27 +166,25 @@ a:hover {
   }
 }
 
-/* Respect reduced-motion preferences and allow manual opt-in via class. */
-.reduce-motion *,
-.reduce-motion *::before,
-.reduce-motion *::after {
-  animation: none !important;
-  transition: none !important;
+.reduce-motion .page.active {
+  animation: none;
+}
+
+.reduce-motion img.hover-shadow,
+.reduce-motion .hover-shadow:hover {
+  transition: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation: none !important;
-    transition: none !important;
+  .page.active {
+    animation: none;
   }
 
-  .page.active {
-    animation: none !important;
+  img.hover-shadow,
+  .hover-shadow:hover {
+    transition: none;
   }
 }
-/* end of animation */
 
 .column {
   display: block;
@@ -257,6 +255,32 @@ img{
   .content {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+/* Lightbox caption spacing */
+.lb-dataContainer {
+  padding-top: 14px;
+}
+
+.lb-data {
+  padding-top: 4px;
+}
+
+.lb-data .lb-caption {
+  display: block;
+  padding-top: 10px;
+  color: black;
+  background-color: #e6e6e6;
+}
+
+.lb-data .lb-number {
+  color: black;
+  background-color: #e6e6e6;
+  padding: 10px;
+}
+
+.lb-data .lb-close {
+  margin-top: 8px;
 }
 
 img.hover-shadow {
