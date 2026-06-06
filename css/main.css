@@ -112,7 +112,7 @@ a:hover {
     gap: 2rem;
     padding: 20px;
 }
-/* beginning of animation */
+
 .page-shell {
   perspective: 1800px;
 }
@@ -273,12 +273,12 @@ img{
 .lb-data .lb-caption {
   display: block;
   padding-top: 10px;
-  color: black;
+  color: #000000;
   background-color: #e6e6e6;
 }
 
 .lb-data .lb-number {
-  color: black;
+  color: #000000;
   background-color: #e6e6e6;
   padding: 10px;
 }
